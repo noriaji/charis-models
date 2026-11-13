@@ -33,6 +33,14 @@ Each `.ctm` file is a small archive (format `CTM1`, written by the viewer's own 
 
 The license texts: [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), [MIT](https://opensource.org/license/mit).
 
+## Motion model (release `motion-1`)
+
+The release [`motion-1`](../../releases/tag/motion-1) holds one file for Charis Viewer's "Motion Between Poses" feature: `mmm_v6_soma_fp32.onnx`, the MotionBricks SOMA motion model from NVIDIA's [NVlabs/motionbricks](https://github.com/NVlabs/motionbricks) (v0.2.0, commit 54fc563).
+**It is an unmodified copy of the original.** It is used only when a user presses the download button in the viewer, and it runs on the user's own PC (no pose data is sent anywhere).
+
+- License: **NVIDIA Open Model Agreement**, "Licensed by NVIDIA Corporation under the NVIDIA Open Model Agreement." The full text is in the release (`NVIDIA-Open-Model-Agreement.txt`), copied from the [agreement page](https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-agreement/). The origin and the "no changes" statement are in `NOTICE`. A copy of both is also in [`motion-1/`](motion-1) in this repository.
+- Size 757,864,273 bytes, SHA-256 `856419dc72aeb14e591eebf4dd0ea05734a2506ddb00bcd39dd6dac2ad60f4fb` (also in `SHA256SUMS.txt`). The viewer checks both before it uses the file.
+
 ## Updating
 
 A file is never replaced under the same release: the viewer pins the SHA-256 of each file. A new set of models gets a new release tag (`models-2`, ...), and a new viewer points to it. Older viewers keep working with the older release.

@@ -1,0 +1,9 @@
+Licensed by NVIDIA Corporation under the NVIDIA Open Model Agreement.
+
+File: mmm_v6_soma_fp32.onnx
+What it is: the MotionBricks SOMA motion model (ONNX, fp32), from NVIDIA's MotionBricks project.
+Source: https://github.com/NVlabs/motionbricks (release v0.2.0, commit 54fc563aeaaf819a753d72cc9fdc6713989cdd43), path motionbricks/assets/onnx/soma/mmm_v6_soma_fp32.onnx
+Changes: none. The file is an unmodified copy of the original (size and SHA-256 are in SHA256SUMS.txt).
+License: NVIDIA Open Model Agreement (the full text is in NVIDIA-Open-Model-Agreement.txt, copied from https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-agreement/).
+
+It is used by Charis Viewer's "Motion Between Poses" feature, only when a user presses the download button in the viewer. It runs on the user's own PC; no pose data is sent anywhere.
